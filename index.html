@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">   <!--covers all characters & symbols-->
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+            <!-- sets the width of the viewport to the width of the device-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <!-- latest rendering engine available on the user's computer-->
+
+        <!--Title Bar w/ Logo-->
+        <title>Final Project</title>
+        <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+
+        <!--CSS Link-->
+        <link rel="stylesheet" type="text/css" href="web-design.css">
+
+        <!--Custom Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+        <!--Font awesome icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <!--Remixicon-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+        <!--Lineicons-->
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    </head>
+
+<body>
+
+    <!--Button--> 
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn"); 
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+                } else {
+                mybutton.style.display = "none";
+                }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+        </script>
+
+    <!--NAVIGATION BAR-->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">Hernandez</a>
+
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#head_o" class="nav__link">Background</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#head_h" class="nav__link">Hobbies</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#itfield" class="nav__link">IT Field</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#ambition" class="nav__link">Ambition</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="nav-line"></div>
+
+    <!--HOME-->
+    <section class="home" id="home">
+        <div class="home__container container grid"> <!--DIVION OR SECTION IN WEBSITE--> 
+            <div class="home__content">
+                <span class="home__small">Hello!</span>  <!--span INLINE container element / separator vibes-->
+                <h1 class="home__title"><span>I'm</span> Jenny Hernandez <br>
+                </h1>
+                <h3><span>18 years old</span></h3> <br>
+                <ul class="home__description">
+                    <li>🎂: July 4, 2005</li>
+                    <li>🏠: Palatiw, Pasig City</li>
+                    <li>👩🏻‍💻: Freshman - BSIT</li>
+                    <li>🏫: Pamantasan ng Lungsod ng Pasig</li>
+                    <br>
+                    <li id="sza">"Calm down n stay the course." - SZA</li>
+                </ul>
+                </div>
+                <img src="img/ME.jpg" alt="" class="home__img">
+            </div>
+        </div>
+    </section>
+
+    <div class="home-line"></div>
+
+    <!--BACKGROUND-->
+    <h1 id="head_o">FAMILY BACKGROUND</h1>
+    
+    <section class="carousel" id="carousel">
+        <div class="car__container">
+            <div class="card" style="color: #837873;">
+                <div class="imgBx">
+                    <img src="img/3ofus.jpg">
+                </div>
+                <div class="content">
+                    <h2>STATUS</h2>
+                    <p>I come from a broken family. My ate, and I resided with our Mom.
+                    Maribel, my mother, is 46 years old. She is a manager at a pharmaceutical company right now. Jaimee, my older sister, is 23 years old. She works as a payroll employee.</p>
+                </div>
+            </div>
+            <div class="card" style="color: #9b908b;">
+                <div class="imgBx">
+                    <img src="img/palawan.jpg">
+                </div>
+                <div class="content">
+                    <h2>STRUCTURE</h2>
+                    <p>But, you may refer to our household as an "extended family." I live with my grandma from Mama's side and one of her daughters. Also, I have 1 Tito from my grandma's province who lives with us to be a part of help in the house. </p>
+                </div>
+            </div>
+            <div class="card" style="color: #706762;">
+                <div class="imgBx">
+                    <img src="img/sherlock.jpg">
+                </div>
+                <div class="content">
+                    <h2>PET</h2> <br>
+                    <p>We also have a dog named</p> 
+                    <h2 style="color: rgb(138, 72, 19);">SHERLOCK</h2>
+                    <p>He is 6 years old and a shih tzu</p>
+                </div>
+            </div>
+            <div class="card" style="color: #706762;">
+                <div class="imgBx">
+                    <img src="img/family.jpg">
+                </div>
+                <div class="content">
+                    <h2>WHOLE FAMILY</h2> <br>
+                    <p>What brings our whole family together is when we go out to different places and EAT. It's a great way to bond, relax, and create memories with them. </p>
+                </div>
+            </div>
+            
+            <!--
+            <div class="lcard" style="color: #c9bbb5;">
+                <div class="imgBxl">
+                    <img src="img/family.jpg">
+                </div>
+                <div class="lcontent">
+                    <h2>WHOLE FAMILY</h2>
+                    <p>What brings our whole family together is when we go out to different places and EAT. It's a great way to bond, relax, and create memories with them. </p>
+                </div>
+            </div> -->
+        </div>
+    </section>  
+
+    <div class="background-line"></div>
+
+    <!--HOBBIES_1to5-->
+    <h1 id="head_h">HOBBIES</h1>
+
+    <section class="hobbies_l" id="hobbies_l">
+        <div class="ui-card_l">
+            <img src="img/guitar.jpg" alt="Playing guitar">
+            <div class="ui-des_l">
+                <h2>Playing Guitar</h2>
+                <p>A <span>stress reliever</span> for me</p>
+            </div>
+        </div>
+
+        <div class="ui-card_l">
+            <img src="img/dancing.jpg" alt="dancing">
+            <div class="ui-des_l">
+                <h2>Dancing</h2>
+                <p id="dan">Dancing is basically my WORKOUT and it's just for fun</p>
+            </div>
+        </div>
+
+        <div class="ui-card_l">
+            <img src="img/karaoke.png" alt="Karaoke">
+            <div class="ui-des_l">
+                <h2>Karaoke</h2>
+                <p>Way to release emotions and just jam with close people</p>
+            </div>
+        </div>
+
+        <div class="ui-card_l">
+            <img src="img/vball.jpg" alt="Volleyball">
+            <div class="ui-des_l">
+                <h2>Volleyball</h2>
+                <p>I love watching volleyball plays and it's the ONLY sport I can manage to do</p>
+            </div>
+        </div>
+
+        <div class="ui-card_l">
+            <img src="img/gaming.jpg" alt="Gaming">
+            <div class="ui-des_l">
+                <h2>Gaming</h2>
+                <p>Another stress reliever and something I do when I have a lot of free time</p>
+            </div>
+        </div>
+
+    </section>
+    
+    <!--HOBBIES_6to10-->
+    <h2 id="head_hh">MORE HOBBIES</h2>
+
+    <section class="hob_k" id="hob_k">
+        <div class="ui-card_k">
+            <img src="img/binge.jpg" alt="Binge Watching">
+            <div class="ui-desll">
+                <h2>Binge Watching</h2>
+                <p>Remove boredom and since i'm into watching than reading</p>
+            </div>
+        </div>
+
+        <div class="ui-card_k">
+            <img src="img/podcast.jpg" alt="Podcast">
+            <div class="ui-desll">
+                <h2>Podcast</h2>
+                <p>I like listening to Jumpers Jump to discover new things and while I'm doing some chores</p>
+            </div>
+        </div>
+
+        <div class="ui-card_k">
+            <img src="img/traveling.jpg" alt="Traveling">
+            <div class="ui-desll">
+                <h2>Traveling</h2>
+                <p>Exploring new places has always been fun for me and my family</p>
+            </div>
+        </div>
+
+        <div class="ui-card_k">
+            <img src="img/eating.jpg" alt="Eating">
+            <div class="ui-desll">
+                <h2>Eating</h2>
+                <p>It is my coping mechanism when I'm not in a good state. I just love it</p>
+            </div>
+        </div>
+
+        <div class="ui-card_k">
+            <img src="img/sleeping.jpg" alt="Sleeping">
+            <div class="ui-desll">
+                <h2>Sleeping</h2>
+                <p>A very peaceful hobby of mine</p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="hobbies-line"></div>
+
+    <!--SKILLS-->
+    <section class="skills" id="skills">
+        <div class="s__title">
+            <h2>SKILLS</span> </h2>
+        </div>
+
+        <div class="s__content">
+
+            <div class="s__box">
+                <i class="fa-solid fa-guitar"></i>
+
+                <h2>Musical instrument</h2>
+                <p>I started playing and learning guitar when I was back<br> on Grade 7</p>
+            </div>
+
+            <div class="s__box">
+                <i class="ri-megaphone-fill"></i>
+
+                <h2> Leadership </h2>
+                <p>Lately, it is something that is being tested to me. I make sure to lead my group
+                    into a collective direction and aims to produce a well collaborated work</p>
+            </div>
+
+            <div class="s__box">
+                <i class="fa-solid fa-heart-circle-plus"></i>
+
+                <h2> Mental Fortitude</h2>
+                <p>Being able to be optimistic during times when it's hard to be</p>
+            </div>
+
+            <div class="s__box">
+                <i class="fa-solid fa-keyboard"></i>
+
+                <h2> Touch Typing </h2>
+                <p>Being able to type without looking much at the keyboard</p>
+            </div>  
+
+            <div class="s__box">
+                <i class="fa-solid fa-computer"></i>
+
+                <h2> Tech Savvy </h2>
+                <p>Being exposed to it at such a young age and until now, I grew to developing
+                    deep knowledge and skills when it comes to technologies </p>
+            </div>
+
+            <div class="s__box">
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <h2> Fast Learner </h2>
+                <p>I naturally grasp new informations quickly.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="skill-line"></div>
+
+    <!--IT FIELD-->
+    <section class="itfield" id="itfield">
+        <div class="it-container">
+
+            <!--TITLE-->
+            <div class="it-title">
+                <h1>IT FIELD</h1>
+            </div>
+
+            <main class="row">
+
+                <!--STRENGTH-->
+                <section class="col">
+                    <header class="it-type">
+                        <h2 id="str">STRENGTH</h2>
+                    </header>
+
+                    <div class="it-contents"> <!--content-->
+
+                        <div class="it-box"> 
+                            <i class="ri-swap-2-fill"></i>
+                            <h3>Adaptable</h3>
+                            <p>Change is constant in our everyday life. It shaped
+                                and enabled me to be responsive and resilient to 
+                                it to handle various unforeseen situations.</p>
+                        </div>
+
+                        <div class="it-box"> 
+                            <i class="ri-contacts-fill"></i>
+                            <h3>Versatile</h3>
+                            <p>My ability to be versatile keeps me prepared for a 
+                                variety of tasks. To reduce stress and difficulties, I 
+                                strive to be prepared to transition and multitask 
+                                between different tasks with ease.</p>
+                        </div>
+
+                        <div class="it-box"> 
+                            <i class="ri-speak-fill"></i>
+                            <h3>Communication</h3>
+                            <p>Ability to share ideas effectively to have a smooth 
+                                understanding among other people. For instance, if there 
+                                is a Collaboration. Also, clear communication avoids
+                                misunderstanding and develops strong relationships with 
+                                people I might encounter.</p>
+                        </div>
+
+                        <div class="it-box"> 
+                            <i class="ri-lightbulb-flash-fill"></i>
+                            <h3>Problem-Solving Skill</h3>
+                            <p>This is something I'm into. I like to search for solutions to 
+                                problems, such as by applying my logical and analytical abilities 
+                                to devise solutions. </p>
+                        </div>
+
+                        <div class="it-box"> 
+                            <i class="ri-timer-fill"></i>
+                            <h3>Time Management</h3>
+                            <p>I plan and maximize my time efficiently to avoid cramming and 
+                                stressing out to a specific deadline. I organize my tasks 
+                                accordingly.</p>
+                        </div>
+
+                        <div class="it-box"> 
+                            <i class="ri-graduation-cap-fill"></i>
+                            <h3>Continuous Learner</h3>
+                            <p>I always pursue to learn new things and understand them. It 
+                                might've stemmed from my curiosity because I'm always eager to 
+                                learn something new that is presented to me. This also helps with
+                                my growth as a person and as a future employee.</p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!--WEAKNESS-->
+                <section class="col">
+                    <header class="it-type">
+                        <h2 id="wk">WEAKNESS</h2>
+                    </header>
+
+                    <div class="it-contents"> <!--content-->
+
+                        <div class="it-box"> 
+                            <i class="ri-error-warning-fill"></i>
+                            <h3>Lack of Experience</h3>
+                            <p>As a graduated STEM student, we did not tackle a lot of coding. 
+                                A lot of things are still unfamiliar and unknown to me. This 
+                                will result to insufficient knowledge about programming in 
+                                general. I need to grow and learn more about the IT field.</p>
+                        </div>
+
+                        <div class="it-box"> 
+                            <i class="ri-paint-fill"></i>
+                            <h3>Not skilled Enough w/ Designing</h3>
+                            <p>Designing or being ARTSY is not my forte. I take a while to 
+                                make and settle on a concept design. I'm not inclined towards 
+                                art or creativity in general, which needs to be worked on.</p>
+                        </div>
+
+                        <div class="it-box"> 
+                            <i class="ri-emoji-sticker-fill"></i>
+                            <h3>Lacking in Self-Confidence at times</h3>
+                            <p>This impacts my decision-making since I occasionally get second 
+                                thoughts. I tend to overthink things because I'm afraid of not 
+                                executing them well. For instance, I find it difficult to recite 
+                                in class because I worry that I could respond incorrectly.
+    
+                                But I am acknowledging this negative trait of mine. I'm striving 
+                                to lessen my doubting and do more believing in myself</p>
+                        </div>
+
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </section>
+
+    <div class="field-line"></div>
+
+    <!--AMBITION-->
+    <section class="ambition" id="ambition">
+
+        <div class="am-title">
+            <h1>AMBITION</h1>
+            <p class="caption">"CAREER OR JOB POSITION 
+                 YOU SEE YOURSELF AFTER GRADUATION" </p>
+        </div>
+
+        <div class="row-am">
+
+            <!--Internship-->
+            <div class="col-am">
+                <img src="img/intern.png" alt="IT-Internship">
+                <h4>IT Internship</h4>
+                <p>To gain further practical experience and exposure to 
+                    the IT industry. It could assist me in gaining greater
+                    knowledge and skills to enter and proceed to a higher 
+                    position. </p>
+                <a class="ctn">Entry Level</a>
+                </div>
+
+            <!--Software Engineer-->
+            <div class="col-am">
+                <img src="img/software.png" alt="Software Engineer">
+                <h4>Software Engineer</h4>
+                <p>because it is my initial choice. It is why I became so curious
+                    about the IT industry during senior high and decided to take
+                    BSIT.</p>
+                <a class="ctn">Experienced Level</a>
+            </div>
+
+             <!--Cyber Security-->
+             <div class="col-am">
+                <img id="cypic"src="img/Cyber1.png" alt="Cyber Security">
+                <h4>Cyber Security</h4>
+                <p id="cyber">Due to diving in and researching deeper into the IT industry, 
+                    I came across cybersecurity. Before, I wanted to be a Homicide
+                    detective but changed my mind due to mental incapabilities. 
+                    This might be the closest to it when I came across this one 
+                    because I learned cybersecurity practices to defend and track 
+                    malicious attacks. 
+                    <br>
+                    <br>
+                    Additionally, our professor in COMP 101 speaks highly about 
+                    taking on this job because there is a lack of people working in 
+                    this industry.</p>
+                <a class="ctn">Experienced Level</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="ambition-line"></div>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer__container">
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100053967181098" target="_blank"><i class="ri-facebook-circle-fill"></i></i></i></a>
+                <a href="https://docs.google.com/document/d/1lIRjZrYiu0UcIqjsIfWAEWCkYiBzXELzzedfPkGg7yI/edit?usp=sharing" target="_blank"><i class="ri-copyright-fill"></i></a>
+                <a href="https://www.youtube.com/@KevinPowell" target="_blank"><i class="ri-youtube-fill"></i></a>
+            </div>
+         <!--
+            <div class="footernav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#head_o">Background</a></li>
+                    <li><a href="#head_h">Hobbies</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#itfield">IT Field</a></li>
+                    <li><a href="#ambition">Ambition</a></li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="footerBottom">
+            <p><i class="ri-graduation-cap-fill"></i> Hernandez, Jenny P.</p>
+        </div>
+    </footer>
+
+    
+
+</body>
+</html>
