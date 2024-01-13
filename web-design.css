@@ -366,6 +366,8 @@ ul.home__description {
     min-height: 100vh;
     margin-top: -320px;
     color: #8f6a58;
+    height: 100vh
+    Width: 100%
 }
 .ui-card_l {
     width: 350px;
